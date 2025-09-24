@@ -1,3 +1,20 @@
+/* Estilo para el dropdown de cargos */
+#cargo {
+    color: #111;
+    background-color: rgba(255,255,255,0.8);
+}
+#cargo option {
+    color: #111;
+}
+/* Efecto de elevación al pasar el cursor */
+
+.lift-on-hover {
+    transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+}
+.lift-on-hover:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
 /* Animaciones y efectos modernos */
 .fade-in {
     animation: fadeIn 1.2s ease-in;
