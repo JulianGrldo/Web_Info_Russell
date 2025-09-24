@@ -60,27 +60,29 @@
           playsinline
           loop
           src="https://russellbedford.com.co/wp-content/uploads/2022/02/RBF-Video-cifras.mp4"
-          style="aspect-ratio: 16/9; background: #001871;"
+          style="aspect-ratio: 16/9; background: #001871; max-height: 350px;"
         ></video>
-        <div class="absolute inset-0 flex flex-col justify-center items-center text-white px-4">
-          <h2 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg text-center text-white" style="font-family: 'Inter', 'Montserrat', Arial, sans-serif; text-shadow: 2px 2px 8px #001871;">Russell Bedford en el mundo</h2>
-          <div class="w-32 h-2 rounded-full bg-gradient-to-r from-blue-900 via-turquesa to-naranja mb-8"></div>
-          <div class="flex flex-wrap justify-center gap-12 md:gap-24 mb-4">
-            <div class="text-center">
-              <span class="text-5xl md:text-6xl font-bold">+393</span><br>
-              <span class="text-2xl italic">Oficinas</span>
-            </div>
-            <div class="text-center">
-              <span class="text-5xl md:text-6xl font-bold">+106</span><br>
-              <span class="text-2xl italic">Países</span>
-            </div>
-            <div class="text-center">
-              <span class="text-5xl md:text-6xl font-bold">+700</span><br>
-              <span class="text-2xl italic">Socios</span>
-            </div>
-            <div class="text-center">
-              <span class="text-5xl md:text-6xl font-bold">+10.618</span><br>
-              <span class="text-2xl italic">Empleados</span>
+        <div class="absolute inset-0 flex items-center justify-center text-white px-2 md:px-4">
+          <div class="w-full flex flex-col justify-center items-center" style="background: rgba(0,24,113,0.35); padding: 2.5rem 0;">
+            <h2 class="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 drop-shadow-lg text-center text-white" style="font-family: 'Inter', 'Montserrat', Arial, sans-serif; text-shadow: 2px 2px 8px #001871;">Russell Bedford en el mundo</h2>
+            <div class="w-16 sm:w-20 md:w-32 h-2 rounded-full bg-gradient-to-r from-blue-900 via-turquesa to-naranja mb-4 md:mb-8"></div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-y-2 gap-x-6 md:gap-x-12 lg:gap-x-24 w-full max-w-3xl mx-auto mb-2 md:mb-4">
+              <div class="flex flex-col justify-center items-center">
+                <span class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">+393</span>
+                <span class="text-sm sm:text-base md:text-2xl italic">Oficinas</span>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <span class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">+106</span>
+                <span class="text-sm sm:text-base md:text-2xl italic">Países</span>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <span class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">+700</span>
+                <span class="text-sm sm:text-base md:text-2xl italic">Socios</span>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <span class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">+10.618</span>
+                <span class="text-sm sm:text-base md:text-2xl italic">Empleados</span>
+              </div>
             </div>
           </div>
         </div>
@@ -242,8 +244,11 @@
           </div>
         </form>
         <!-- El mensaje de éxito solo se muestra tras el envío, no ocultes el formulario por JS -->
-        <div id="success-message" class="hidden mt-6 text-center bg-green-500/80 p-4 rounded-lg">
-          <p class="font-bold">¡Gracias por tu interés! Hemos recibido tu información correctamente. Pronto nos pondremos en contacto contigo.</p>
+        <div id="success-message" class="hidden mt-6 flex flex-col items-center justify-center bg-white border-2 border-azul-oscuro p-8 rounded-xl shadow-lg">
+          <img src="https://iili.io/Kcmrg6B.png" alt="Logo Russell Bedford" class="h-16 mb-4" />
+          <h4 class="text-2xl font-bold text-azul-oscuro mb-2">¡Envío exitoso!</h4>
+          <p class="text-lg text-gray-700 mb-2">Gracias por tu interés en Russell Bedford.</p>
+          <p class="font-semibold text-morado">Hemos recibido tu información correctamente.<br>Pronto nos pondremos en contacto contigo.</p>
         </div>
       </section>
     </main>
