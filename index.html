@@ -155,7 +155,7 @@
             Completa el formulario y nos pondremos en contacto contigo.
           </p>
         </div>
-  <form id="application-form" name="contact" netlify class="max-w-2xl mx-auto">
+  <form name="contact" method="POST" data-netlify="true" class="max-w-2xl mx-auto">
           <input type="hidden" name="form-name" value="contact" />
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
@@ -241,14 +241,9 @@
             </button>
           </div>
         </form>
-        <div
-          id="success-message"
-          class="hidden mt-6 text-center bg-green-500/80 p-4 rounded-lg"
-        >
-          <p class="font-bold">
-            ¡Gracias por tu interés! Hemos recibido tu información
-            correctamente. Pronto nos pondremos en contacto contigo.
-          </p>
+        <!-- El mensaje de éxito solo se muestra tras el envío, no ocultes el formulario por JS -->
+        <div id="success-message" class="hidden mt-6 text-center bg-green-500/80 p-4 rounded-lg">
+          <p class="font-bold">¡Gracias por tu interés! Hemos recibido tu información correctamente. Pronto nos pondremos en contacto contigo.</p>
         </div>
       </section>
     </main>
